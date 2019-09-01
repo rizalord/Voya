@@ -1,0 +1,391 @@
+.navbar {
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(77, 130, 209);
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+}
+
+.navbar img {
+	display: inline-block;
+	width: 100px;
+	position: absolute;
+	left: 20px;
+}
+
+.navbar .searchBar {
+	display: inline-block;
+	margin: auto;
+	width: 40%;
+}
+
+.searchBar form input.searchField {
+	width: 90%;
+	border-radius: 10px;
+	border: 0px;
+	height: 32.5px;
+	padding: 10px;
+	padding-bottom: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-family: "Helvetica Neue",
+		Helvetica,
+		Arial,
+		sans-serif;
+}
+
+*:focus {
+	outline: none;
+}
+
+button {
+	position: absolute;
+	border: 0px;
+	background-color: white;
+	height: 32.5px;
+	width: 50px;
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+	border-top-right-radius: 10px;
+	outline: none;
+	border-bottom-right-radius: 10px;
+}
+
+button i {
+	border: 0px;
+	background-color: white;
+}
+
+.user {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 15px;
+	width: 50px;
+	height: 100%;
+	border-radius: 30px !important;
+}
+
+.user img {
+	display: block;
+	width: 70%;
+	height: 70%;
+	border-radius: 30px !important;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 1.2px solid rgba(255, 255, 255, 1);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.user img:active {
+	border: 1.2px solid rgb(136, 136, 255);
+}
+
+/* user navbar */
+.userNav {
+	z-index: 2;
+	position: absolute;
+	background-color: white;
+	width: 200px;
+	height: auto;
+	right: 7px;
+	top: 47px;
+	border-radius: 4px;
+	box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.2),
+		1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+	padding: 10px;
+	display: none;
+}
+
+.imageProfile {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+
+.imgUser {
+	display: inline-block;
+	position: absolute;
+	width: 50px !important;
+	height: 50px !important;
+	left: 0px !important;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 30px;
+}
+
+.nameUser {
+	display: inline-block;
+	position: absolute;
+	left: 60px;
+	right: 0px;
+	height: 100%;
+}
+
+.userNamee {
+	display: block;
+	font-family: "Helvetica Neue",
+		Helvetica,
+		Arial,
+		sans-serif;
+	font-size: 12px;
+	line-height: 50px;
+	text-align: left;
+	letter-spacing: normal;
+	word-spacing: 0px;
+
+	font-weight: 600;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none solid rgb(25, 23, 28);
+	text-align: start;
+	text-indent: 0px;
+
+}
+
+hr.lineBreak {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	margin-bottom: 12.5px;
+	margin-top: 12.5px;
+	width : 100%!important;
+}
+
+ul,
+li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+li a {
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+
+.content {
+	width: 100%;
+	height: auto;
+}
+
+.content li {
+	height: 30px;
+	width: 100%;
+	border-radius: 7px;
+}
+
+.content li:hover {
+	background-color: rgb(115, 67, 204);
+}
+
+.left {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.left i {
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+}
+
+.right {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	float: left;
+	padding: 5px;
+}
+
+.right p {
+	font-family : "Helvetica Neue",
+		Helvetica,
+		Arial,
+		sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: start;
+	text-indent: 0px;
+}
+
+.clear {
+	clear: left;
+}
+.btnSearch {
+	display: none;
+}
+
+@media (max-width : 612px) {
+	.searchBar {
+		display: none;
+	}
+
+	.navbar .searchBar {
+		display: inline-block;
+		margin: auto;
+		width: 40%;
+		display: none;
+	}
+
+	.searchBar form input.searchField {
+		z-index : 2;
+		position: absolute;
+		left : 0px; 
+		width : calc(100% - 40px);
+		padding-right: 20px;
+		top : 0px;
+		bottom : 0px;
+		border-radius: 0px;
+		border: 0px;
+		height: auto;
+		padding: 10px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+	.searchBar form button{
+		z-index : 2;
+		position: absolute;
+		right : 0px;
+		top : 0px;
+		bottom : 0px;
+		border-radius: 0px;
+		border: 0px;
+		height: auto;
+	}
+	.searchBar form button::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width : 1px;
+		left:0px;
+		top : 10px;
+		bottom : 10px;
+		background-color: rgba(0,0,0,.5);
+	}
+
+	.btnSearch{
+		position: absolute;
+		right: 65px;
+		border-radius: 30px;
+		width : 37px;
+		height : 37px;
+		background-color: transparent;
+		top : 50%;
+		transform: translate(0% , -50%);
+		display: block;
+	}
+	.btnSearch i{
+		background-color: transparent;
+		color: rgba(255,255,255,0.5);
+		border-radius: 30px;
+	}
+}
+
+/* feddback modal */
+.feedbackModal{
+	display: none;
+	position: absolute;
+	width : 380px;
+	height: 480px;
+	top : 50%;
+	left : 50%;
+	transform: translate(-50%,-50%);
+	background-color: red;
+	z-index: 18;
+}
+.feedbackModal .headerModal{
+	width: 100%;
+	height : 60px;
+	background-color: #607D8B;
+	color: white;
+	font: 300 23px/24px Roboto,
+	RobotoDraft,
+	Helvetica,
+	Arial,
+	sans-serif;
+	margin: 0px;
+	padding: 16px;
+	border : 1px solid rgb(77, 130, 209);
+}
+
+.textFeed{
+	width : 100%;
+	height : 375px;
+	background-color: white;
+}
+
+.textFeed textarea{
+	width : 100%;
+	height : 355px;
+	padding : 10px;
+	resize: none;
+	border : 1px solid rgb(0,0,0,0.2);
+	font-family: "Helvetica Neue",
+	Helvetica,
+	Arial,
+	sans-serif;
+}
+
+.sendModal{
+	height : 50px;
+	width: 100%;
+	background-color: white;
+}
+.sendModal button{
+	border : 0px;
+	background-color: transparent;
+	width : 70px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 0px;
+	position: static;
+	float: right!important;
+}
+.sendModal button:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.sendModal button:first-of-type{
+	color: rgb(136, 136, 255);
+}
+
+@media (max-width : 465px){
+	.feedbackModal {
+		width: 80%;
+		height: 380px;
+	}
+	.textFeed {
+		width: 100%;
+		height: 275px;
+		background-color: white;
+	}
+	.sendModal {
+		height: 50px;
+		width: 100%;
+		background-color: white;
+	}
+	.textFeed textarea {
+		width: 100%;
+		height: 92%;
+		padding: 10px;
+		resize: none;
+		border: 1px solid rgb(0, 0, 0, 0.2);
+		font-family: "Helvetica Neue",
+			Helvetica,
+			Arial,
+			sans-serif;
+	}
+}

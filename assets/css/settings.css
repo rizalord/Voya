@@ -1,0 +1,170 @@
+.leftSettings {
+	left: 0px;
+	width: 230px;
+	top: 50px;
+	bottom: 0px;
+	background-color: #F5F5F5;
+	position: fixed;
+}
+
+.leftSettings ul {
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+.leftSettings ul li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 60px;
+	/* background-color: red; */
+	/* border : 1px solid black; */
+	line-height: 60px;
+	padding: 0px 20px;
+
+	/* font set */
+	color: rgb(17, 17, 17);
+	font-family: "YouTube Noto",
+		Roboto,
+		arial,
+		sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.leftSettings ul li:hover {
+	background-color: rgb(235, 229, 229);
+}
+
+.leftSettings ul li.active {
+	background-color: rgb(235, 229, 229);
+	text-decoration: underline;
+}
+
+
+
+/* rightSettings */
+
+.rightSettings {
+	position: absolute;
+	left: 230px;
+	right: 0px;
+	top: 50px;
+	bottom: 0px;
+	background-color: white;
+    padding: 22px 20px;
+    overflow: auto;
+}
+
+.loginAs,
+.nParap {
+	color: rgb(96, 96, 96);
+	font-family: "YouTube Noto",
+		Roboto,
+		arial,
+		sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.dividerSet {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+.subMenu {
+	color: rgb(85, 85, 85);
+	font-family: "YouTube Noto",
+		Roboto,
+		arial,
+		sans-serif;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 600;
+}
+
+.radioSelect input , 
+.radioSelect p{
+    display: inline-block;
+}
+
+.mbole-version .containerSet{
+    width : 100%;
+    height : auto;
+    max-height: 18px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.dsktp-version .containerSet {
+	width: 100%;
+	height: auto;
+	max-height: unset;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.deleteAcc{
+    width : 100px;
+    height : 30px;
+    line-height: 30px;
+    margin : 0px;
+    padding : 0px;
+    z-index: -1;
+}
+
+.dsktp-version .deleteAcc{
+    z-index: 1;
+}
+.fa-caret-down,
+.fa-caret-up{
+    float: right;
+}
+
+hr{
+    display: none;
+}
+.dsktp-version .containerSet:nth-of-type(2),
+.dsktp-version .containerSet:nth-of-type(3){
+    display: none;
+}
+
+.mbole-version .containerSet {
+    display: none;
+	
+}
+
+.dsktp-version .containerSet {
+	display: block;
+}
+
+@media (max-width : 542px){
+    .mbole-version .containerSet {
+    	display: block;
+    }
+
+    .dsktp-version .containerSet {
+    	display: none;
+    }
+    .leftSettings ul{
+        display: none;
+    }
+
+    .rightSettings {
+    	position: absolute;
+    	left: 0px;
+    	right: 0px;
+    	top: 50px;
+    	bottom: 0px;
+    	overflow: auto;
+    }
+
+    .mbole-version .deleteAcc {
+    	z-index: -1;
+    }
+}
